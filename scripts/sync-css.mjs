@@ -43,15 +43,24 @@ const banner =
   ` *  https://achmadalimin.com/design-system\n` +
   ` *  Bundled: tokens.css + design-system.css (tokens first). */\n\n`;
 
+const bundle = banner + tokens + "\n\n" + ds;
+
 // 2. Single bundled stylesheet (the main entry users import).
-writeFileSync(
-  resolve(DIST_DIR, "styles.css"),
-  banner + tokens + "\n\n" + ds
-);
+writeFileSync(resolve(DIST_DIR, "styles.css"), bundle);
 
 // 3. Also ship the two files separately for users who already have their own tokens.
 copyFileSync(resolve(SRC_DIR, "tokens.css"), resolve(DIST_DIR, "tokens.css"));
 copyFileSync(resolve(SRC_DIR, "design-system.css"), resolve(DIST_DIR, "design-system.css"));
+
+// 4. Mirror the bundle into the portfolio assets so the `curl` quick-start on the
+//    design-system page serves one complete, standalone file (tokens included).
+const PORTFOLIO_UIKIT = resolve(PORTFOLIO_CSS, "ui-kit.css");
+try {
+  writeFileSync(PORTFOLIO_UIKIT, bundle);
+  console.log("✔ Mirrored bundle to portfolio assets/css/ui-kit.css");
+} catch {
+  console.warn("⚠ Could not write ui-kit.css to the portfolio repo (not a sibling?)");
+}
 
 console.log("✔ Built dist/styles.css (tokens + design-system)");
 console.log("✔ Built dist/tokens.css, dist/design-system.css");
