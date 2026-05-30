@@ -1,0 +1,41 @@
+{
+  "name": "@achmadalimin/ui",
+  "version": "0.1.0",
+  "description": "Design system styles by Achmad Alimin — CSS tokens and component classes (ui-btn, ui-modal, ui-tabs, …). CSS-only; React components coming later.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Achmad Alimin <contact@achmadalimin.com> (https://achmadalimin.com)",
+  "homepage": "https://achmadalimin.com/design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merahburam/achmadalimin-ui.git"
+  },
+  "keywords": [
+    "design-system",
+    "css",
+    "ui",
+    "components",
+    "design-tokens"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    "./styles.css": "./dist/styles.css",
+    "./tokens.css": "./dist/tokens.css",
+    "./design-system.css": "./dist/design-system.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/sync-css.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
