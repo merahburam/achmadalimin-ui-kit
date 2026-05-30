@@ -1,5 +1,5 @@
 {
-  "name": "@achmadalimin/ui",
+  "name": "@achmadalimin/ui-kit",
   "version": "0.1.0",
   "description": "Design system styles by Achmad Alimin — CSS tokens and component classes (ui-btn, ui-modal, ui-tabs, …). CSS-only; React components coming later.",
   "type": "module",
@@ -8,7 +8,7 @@
   "homepage": "https://achmadalimin.com/design-system",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/merahburam/achmadalimin-ui.git"
+    "url": "git+https://github.com/merahburam/achmadalimin-ui-kit.git"
   },
   "keywords": [
     "design-system",

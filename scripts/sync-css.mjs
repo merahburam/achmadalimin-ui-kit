@@ -39,7 +39,7 @@ writeFileSync(resolve(SRC_DIR, "tokens.css"), tokens);
 writeFileSync(resolve(SRC_DIR, "design-system.css"), ds);
 
 const banner =
-  `/*! @achmadalimin/ui — design system styles\n` +
+  `/*! @achmadalimin/ui-kit — design system styles\n` +
   ` *  https://achmadalimin.com/design-system\n` +
   ` *  Bundled: tokens.css + design-system.css (tokens first). */\n\n`;
 

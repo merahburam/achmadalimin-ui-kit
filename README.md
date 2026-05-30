@@ -1,16 +1,16 @@
-# @achmadalimin/ui
+# @achmadalimin/ui-kit
 
 Design system styles by [Achmad Alimin](https://achmadalimin.com/design-system) —
 CSS design tokens and component classes (`ui-btn`, `ui-modal`, `ui-tabs`, and more).
 
 > **CSS-only today.** This package ships stylesheets you use with plain HTML class
-> names. React components (`import { Modal } from "@achmadalimin/ui"`) are planned
+> names. React components (`import { Modal } from "@achmadalimin/ui-kit"`) are planned
 > but not yet included.
 
 ## Install
 
 ```bash
-npm install @achmadalimin/ui
+npm install @achmadalimin/ui-kit
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install @achmadalimin/ui
 Import the bundled stylesheet once at your app entry point:
 
 ```js
-import "@achmadalimin/ui/styles.css";
+import "@achmadalimin/ui-kit/styles.css";
 ```
 
 Then use the component classes in your markup:
@@ -43,8 +43,8 @@ Then use the component classes in your markup:
 If you already define `--color-*` primitives, import only the component layer:
 
 ```js
-import "@achmadalimin/ui/tokens.css";          // optional — the design primitives
-import "@achmadalimin/ui/design-system.css";   // component classes
+import "@achmadalimin/ui-kit/tokens.css";          // optional — the design primitives
+import "@achmadalimin/ui-kit/design-system.css";   // component classes
 ```
 
 ## Theming
