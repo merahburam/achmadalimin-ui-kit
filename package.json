@@ -1,6 +1,6 @@
 {
   "name": "@achmadalimin/ui-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Design system styles by Achmad Alimin — CSS tokens and component classes (ui-btn, ui-modal, ui-tabs, …). CSS-only; React components coming later.",
   "type": "module",
   "license": "MIT",
