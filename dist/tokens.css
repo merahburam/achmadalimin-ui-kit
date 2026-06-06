@@ -55,6 +55,20 @@
   --color-error-strong: #f87171;
   --color-listening: #ef4444;
 
+  /* Sticky notes (case study Goals board) */
+  --sticky-yellow: #f7e08a;
+  --sticky-blue: #a8d8e8;
+  --sticky-pink: #f3b6c8;
+  --sticky-green: #b9e0a8;
+  --sticky-ink: #2a2418;
+  --sticky-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+
+  /* Fixed dark text for always-white surfaces (legend cards, white palette).
+     Theme-independent — defined only here, NOT overridden in light mode. */
+  --color-ink: #1a1a1a;
+  --color-ink-soft: #4a4a4a;
+  --color-ink-muted: #6b6b6b;
+
   /* Page colors */
   --page-primary: #242424;
   --page-secondary: #4048af;
@@ -169,6 +183,9 @@
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
   --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
   --shadow-bubble: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Sticky notes, softer shadow in light mode */
+  --sticky-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 
   /* Tooltip */
   --tooltip-bg: #1a1a1a;

@@ -60,7 +60,7 @@ own stylesheet to retheme.
 
 ## Components
 
-Accordion · Badge · Banner · Button · Card · Input · Modal · Tabs · Tooltip
+Accordion · Badge · Banner · Button · Card · Input · Modal · Pager · Tabs · Toggle · Tooltip
 
 See the full reference at **[achmadalimin.com/design-system](https://achmadalimin.com/design-system)**.
 
